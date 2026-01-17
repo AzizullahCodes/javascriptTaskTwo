@@ -1,4 +1,4 @@
-let name = document.getElementById('nameInput');
+let name = document.getElementById("nameInput");
 let accountNumber = document.getElementById('accountNumberInput');
 // accountNumber = Number(accountNumber)
 let initialBalance = document.getElementById('initialBalance');
@@ -49,25 +49,26 @@ function addAmount(){
     depositAmount.value = '';
 }
 
-// withdrawing function
-function withdrawingFunction(){
-    let amountWithdrawing = document.getElementById('withdrawingInput');
-    amountWithdrawing = Number(amountWithdrawing.value)
-    console.log(amountWithdrawing);
-      let getAfterAdding = localStorage.getItem('initialBalance');
-      console.log(getAfterAdding);
-    //   condition 
-    if(amountWithdrawing <= getAfterAdding){
-        let currentBalance = getAfterAdding - amountWithdrawing;
-        localStorage.setItem('initialBalance',currentBalance)
-        // console.log(currentBalance)
-        let getAfterWithdrawing = localStorage.getItem('initialBalance');
-        // console.log(getAfterWithdrawing)
-            document.getElementById('balanceHeading').innerHTML = `Balance: ${getAfterWithdrawing}`;
-    }
-    else{
-        alert('Insufficient Balance, Plz recharge your Account')
-    }
+// withdrawingFunction
+function withdrawingFunction() {
 
-    amountWithdrawing.value = '';
+    let withdrawInput = document.getElementById('withdrawingInput');
+    let amountWithdrawing = Number(withdrawInput.value);
+
+    let getAfterAdding = Number(localStorage.getItem('initialBalance'));
+
+    if (amountWithdrawing <= getAfterAdding && amountWithdrawing > 0) {
+
+        let currentBalance = getAfterAdding - amountWithdrawing;
+        localStorage.setItem('initialBalance', currentBalance);
+
+        document.getElementById('balanceHeading').innerHTML =
+            `Balance: ${currentBalance}`;
+
+        // ✅ input clears correctly
+        withdrawInput.value = '';
+
+    } else {
+        alert('Insufficient Balance, Please recharge your Account');
+    }
 }

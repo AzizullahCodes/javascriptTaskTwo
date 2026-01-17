@@ -3,27 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mini Bank App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<input type="text" placeholder="Enter your name" id="nameInput"><br>
-<input type="number" placeholder="Enter your account number" id="accountNumberInput"><br> 
-<input type="number" placeholder="Enter initial Balance" id="initialBalance"><br>
-<button onclick="createAccount()">create account</button><br>
-<label for="">Deposit Balance</label>
-<input type="number" placeholder="Enter amount to deposit" id="depositAmount"><br>
-<button onclick="addAmount()">add amount</button>
-<!-- with draw -->
- <input type="number" placeholder="Enter withdrawing amount" id="withdrawingInput">;
- <button onclick="withdrawingFunction()">withdraw</button>
-<h2 id="nameHeading"></h2>
-<h2 id="accountNumberHeading"></h2>
-<h2 id="balanceHeading"></h2>
+<div class="container">
 
+    <h1>Mini Bank System</h1>
 
+    <input type="text" placeholder="Enter your name" id="nameInput">
+    <input type="number" placeholder="Enter your account number" id="accountNumberInput">
+    <input type="number" placeholder="Enter initial balance" id="initialBalance">
 
+    <button onclick="createAccount()">Create Account</button>
 
-    <script src="app.js"></script>
+    <div class="section">
+        <label>Deposit Balance</label>
+        <input type="number" placeholder="Enter amount to deposit" id="depositAmount">
+        <button onclick="addAmount()">Deposit Amount</button>
+    </div>
+
+    <div class="section">
+        <label>Withdraw Balance</label>
+        <input type="number" placeholder="Enter withdrawing amount" id="withdrawingInput">
+        <button onclick="withdrawingFunction()">Withdraw Amount</button>
+    </div>
+
+    <div class="result">
+        <h2 id="nameHeading"></h2>
+        <h2 id="accountNumberHeading"></h2>
+        <h2 id="balanceHeading"></h2>
+    </div>
+
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
