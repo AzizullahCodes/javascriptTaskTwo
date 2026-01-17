@@ -19,9 +19,11 @@ Live Demo:  https://javascript-task-two.vercel.app/
 
 
 --------------------
-📌 Task 2: Multiple Style Changer
+📌 Task 2: Mini Banking System
 
-Live Demo: 
+Live Demo: https://javascript-task-two-i58z.vercel.app/ 
+
+github repos : 
 
 
 --------------------
