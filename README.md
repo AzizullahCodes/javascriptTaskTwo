@@ -29,11 +29,11 @@ github repos :
 --------------------
 
 
-📌 Task 3: Simple Image Slider
+📌 Task 3: url Generator
 
 
 
-Live Demo: 
+Live Demo: https://javascript-task-two-qbmn.vercel.app/
 
 --------------------
 
