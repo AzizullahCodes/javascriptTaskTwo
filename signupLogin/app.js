@@ -10,5 +10,15 @@ function login(){
     // console.log(getInfoFromLocalstorage)
 // now we convert the data of localstorage to Json.parse()
 let jsonData = JSON.parse(getInfoFromLocalstorage);
-console.log(jsonData)
+console.log(jsonData);
+let jsonEmail = jsonData.email;
+let jsonPassword = jsonData.password;
+// console.log(jsonEmail);
+// console.log(jsonPassword);
+if(email == jsonEmail && password == jsonPassword){
+    window.location.href = './home.html'
+}
+else{
+    alert('Plz Enter valid email and password')
+}
 }
