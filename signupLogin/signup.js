@@ -19,7 +19,9 @@ function signup(){
     }
     let data = localStorage.getItem('signupInformation')
     if(data){
-        alert('user already registered')
+        alert('user already registered');
+        // redirect user to login 
+    window.location.href = './index.html';
     }
 
     else{

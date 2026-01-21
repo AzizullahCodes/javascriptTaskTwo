@@ -26,4 +26,7 @@ if(email == jsonEmail  && password == jsonPassword)
 else{
     alert('Plz Enter valid email and password')
 }
+
+document.getElementById('emailInput').value = '';
+document.getElementById('passwordInput').value = '';
 }
