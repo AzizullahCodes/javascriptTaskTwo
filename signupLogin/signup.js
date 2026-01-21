@@ -23,7 +23,13 @@ function signup(){
     let signupObjectToString = JSON.stringify(signupObject);
     localStorage.setItem('signupInformation',signupObjectToString)
 
-    // redirect user to login 
+    if(firstName =='' && lastName == '' && email == ''  && password == ''){
+        alert('Plz fill signup form first')
+        
+    }
+    else{
+        // redirect user to login 
     window.location.href = './index.html';
+    }
 
 }
