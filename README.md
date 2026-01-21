@@ -40,15 +40,15 @@ Live Demo: https://javascript-task-two-qbmn.vercel.app/
 --------------------
 📌 Task 4: Bulb on/off function (attributes playing)
 
-Live Demo: https://javascript-tasks-3lxt.vercel.app/ 
+Live Demo: 
 
-souce code : https://github.com/AzizullahCodes/javascriptTasks/tree/main/bulbOnOff
+
 
 --------------------
 
 📌 Task 5: swapping image task
 
-Live Demo: https://javascript-tasks-341l.vercel.app/
+Live Demo: 
 
 
 
@@ -56,14 +56,14 @@ Live Demo: https://javascript-tasks-341l.vercel.app/
 
 📌 Task 6: Hashtag Generator
 
-Live Demo: https://javascript-tasks-65a8.vercel.app/
+Live Demo: 
 
 
 --------------------
 
 📌 Task 7: palindrome checker
 
-Live Demo: https://javascript-tasks-sg4s.vercel.app/
+Live Demo: 
 
 souce code : 
 
@@ -72,7 +72,7 @@ souce code :
 
 📌 Task 8: autoBackgroundColorChanger
 
-Live Demo: https://javascript-tasks-da1h.vercel.app/
+Live Demo: 
 
 
 
@@ -80,14 +80,14 @@ Live Demo: https://javascript-tasks-da1h.vercel.app/
 
 📌 Task 9: autoSlider
 
-Live Demo: https://javascript-tasks-y8ft.vercel.app/
+Live Demo: 
 souce code : 
 
 --------------------
 
 📌 Task 10: nicMasker
 
-Live Demo: https://javascript-tasks-voee.vercel.app/
+Live Demo: 
 souce code : 
 
 --------------------
