@@ -6,6 +6,9 @@ function login(){
 
     // now we get data from localstorage to compare email and password 
     let getInfoFromLocalstorage = localStorage.getItem('signupInformation');
+
+
+
     if(!getInfoFromLocalstorage){
         alert('No account found plz signup first');
         return;

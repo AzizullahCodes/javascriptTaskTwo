@@ -17,11 +17,16 @@ function signup(){
         email : email,
         password : password
     }
-    // console.log(signupObject)
+    let data = localStorage.getItem('signupInformation')
+    if(data){
+        alert('user already registered')
+    }
 
-    // convert object to json.stringify() for saving in local storage
+    else{
+        // convert object to json.stringify() for saving in local storage
     let signupObjectToString = JSON.stringify(signupObject);
     localStorage.setItem('signupInformation',signupObjectToString)
+    }
 
     if(firstName =='' && lastName == '' && email == ''  && password == ''){
         alert('Plz fill signup form first')
