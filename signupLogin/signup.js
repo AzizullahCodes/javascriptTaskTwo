@@ -38,5 +38,10 @@ function signup(){
         // redirect user to login 
     window.location.href = './index.html';
     }
+// clear all inputs
+document.getElementById('firstNameInput').value = '';
+document.getElementById('lastNameInput').value = '';
+document.getElementById('emailInput').value = '';
+document.getElementById('passwordInput').value = '';
 
 }

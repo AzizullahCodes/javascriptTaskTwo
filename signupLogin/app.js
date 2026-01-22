@@ -11,7 +11,8 @@ function login(){
 
     if(!getInfoFromLocalstorage){
         alert('No account found plz signup first');
-        return;
+        // return;
+        window.location.href = './signup.html'
     }
 // now we convert the data of localstorage to Json.parse()
 let jsonData = JSON.parse(getInfoFromLocalstorage);
